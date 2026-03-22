@@ -19,6 +19,10 @@ To evaluate the model, I plotted the Predicted Points against the Actual Points 
 
 ![Model Accuracy](results_scatter.png)
 
+* **Ideal Prediction Line:** The red line represents a perfect match.
+* **The Spread:** Most teams cluster closely around the line, showing high predictive accuracy.
+* **Overperformers:** Notable exceptions (like Nottingham Forest or Fulham) show where teams defied the statistical expectations of xG and squad value.
+
 ##  Key Results & Insights
 The model was trained over 1,500 iterations, leading to a highly stable and accurate predictor:
 
@@ -28,10 +32,6 @@ The model was trained over 1,500 iterations, leading to a highly stable and accu
 * **Feature Weight - Financial (Squad Value): 3.93** – Market value correlates with points, but its direct impact is significantly lower than on-field performance metrics.
 
 **Conclusion:** The data proves that while a high squad value helps, a team's ability to generate high-quality chances (xG) is the ultimate driver of success in the Premier League.
-
-* **Ideal Prediction Line:** The red line represents a perfect match.
-* **The Spread:** Most teams cluster closely around the line, showing high predictive accuracy.
-* **Overperformers:** Notable exceptions (like Nottingham Forest or Fulham) show where teams defied the statistical expectations of xG and squad value.
 
 ##  The "Cost Function" Visualization
 This 3D surface plot visualizes how the model "learns". The red marker represents the point where the model's error (Cost) is at its absolute minimum.
