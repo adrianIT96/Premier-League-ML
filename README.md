@@ -19,6 +19,16 @@ To evaluate the model, I plotted the Predicted Points against the Actual Points 
 
 ![Model Accuracy](results_scatter.png)
 
+##  Key Results & Insights
+The model was trained over 1,500 iterations, leading to a highly stable and accurate predictor:
+
+* **Prediction Accuracy (MAE): 5.54 points** – On average, the model's prediction deviates by only 5.5 points from the actual season total. 
+* **Feature Weight - Offensive (xG): 8.40** – This is the most dominant factor in the model.
+* **Feature Weight - Defensive (xGA): -6.59** – A strong inverse correlation with goals allowed.
+* **Feature Weight - Financial (Squad Value): 3.93** – Market value correlates with points, but its direct impact is significantly lower than on-field performance metrics.
+
+**Conclusion:** The data proves that while a high squad value helps, a team's ability to generate high-quality chances (xG) is the ultimate driver of success in the Premier League.
+
 * **Ideal Prediction Line:** The red line represents a perfect match.
 * **The Spread:** Most teams cluster closely around the line, showing high predictive accuracy.
 * **Overperformers:** Notable exceptions (like Nottingham Forest or Fulham) show where teams defied the statistical expectations of xG and squad value.
