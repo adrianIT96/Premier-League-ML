@@ -1,18 +1,32 @@
-# ⚽ Premier League Performance Predictor
-An end-to-end Machine Learning project using **Multiple Linear Regression** to predict season points based on underlying performance metrics.
+# ⚽ Premier League Performance Predictor: ML from Scratch
 
-## 📊 Project Overview
-This model analyzes 5 seasons of Premier League data to understand the relationship between on-field performance and final league standings.
+[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org)
+[![ML](https://img.shields.io/badge/ML-Linear%20Regression-green.svg)](https://en.wikipedia.org/wiki/Linear_regression)
 
-### Key Features:
-* **xG (Expected Goals):** Offensive efficiency.
-* **xGA (Expected Goals Allowed):** Defensive stability.
-* **Squad Value:** Financial power of the club.
+## 📌 Project Overview
+Can we predict a football team's final points based on their underlying performance? This project implements a **Multiple Linear Regression** model from scratch to analyze 5 seasons of English Premier League data (2020-2025).
 
-## 🛠️ Technical Highlights
-* **Vectorized Gradient Descent:** Implemented from scratch using NumPy.
-* **Feature Scaling:** Z-score normalization for efficient convergence.
-* **Interactions:** Interactive 3D visualization of the Cost Function surface.
+The goal was to move beyond simple statistics and build a mathematical engine that understands the weight of offensive and defensive metrics.
+
+## 🚀 Key Technical Features
+* **Mathematical Foundation:** Implementation of Vectorized Gradient Descent without high-level ML libraries (like Scikit-Learn).
+* **Feature Engineering:** Z-score Normalization applied to balance features with different scales (xG vs. Squad Value).
+* **Performance Metrics:** Mean Absolute Error (MAE) tracking to evaluate prediction accuracy.
+* **Advanced Visualization:** 3D Cost Function mapping to verify global minimum convergence.
+
+## 📊 The "Cost Function" Visualization
+This 3D surface plot visualizes how the model "learns". The red marker represents the point where the model's error (Cost) is at its absolute minimum.
+
+![Cost Function Surface](cost_function.png)
+
+## 🧬 Dataset
+The model was trained on 100 team-seasons with the following features:
+1.  **xG (Expected Goals):** Measuring chance quality.
+2.  **xGA (Expected Goals Allowed):** Measuring defensive solidity.
+3.  **Squad Value:** Market value of the team to account for financial influence.
 
 ## 📈 Results
-The model successfully converged to a global minimum, providing a Mean Absolute Error (MAE) of approximately **[DOPLŇ SVOJE ČÍSLO]** points.
+The model successfully identifies **Expected Goals (xG)** as the strongest predictor of league success, outweighing even squad market value in several analyzed seasons.
+
+---
+*Created as part of the Machine Learning Specialization (DeepLearning.AI) journey.*
