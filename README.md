@@ -14,6 +14,15 @@ The goal was to move beyond simple statistics and build a mathematical engine th
 * **Performance Metrics:** Mean Absolute Error (MAE) tracking to evaluate prediction accuracy.
 * **Advanced Visualization:** 3D Cost Function mapping to verify global minimum convergence.
 
+## 🎯 Model Performance: Predicted vs. Actual
+To evaluate the model, I plotted the Predicted Points against the Actual Points earned by teams. 
+
+![Model Accuracy](results_scatter.png)
+
+* **Ideal Prediction Line:** The red line represents a perfect match.
+* **The Spread:** Most teams cluster closely around the line, showing high predictive accuracy.
+* **Overperformers:** Notable exceptions (like Nottingham Forest or Fulham) show where teams defied the statistical expectations of xG and squad value.
+
 ## 📊 The "Cost Function" Visualization
 This 3D surface plot visualizes how the model "learns". The red marker represents the point where the model's error (Cost) is at its absolute minimum.
 
