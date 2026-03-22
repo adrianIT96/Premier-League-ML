@@ -44,8 +44,11 @@ The model was trained on 100 team-seasons with the following features:
 2.  **xGA (Expected Goals Allowed):** Measuring defensive solidity.
 3.  **Squad Value:** Market value of the team to account for financial influence.
 
-##  Results
-The model successfully identifies **Expected Goals (xG)** as the strongest predictor of league success, outweighing even squad market value in several analyzed seasons.
+##  Conclusion & Key Findings
+The model provides a data-driven confirmation of how football success is constructed. By analyzing 100 team-seasons, we can conclude that:
+  Performance beats Finance: On-field efficiency (xG and xGA) is mathematically twice as important ($w \approx 8.40$) as the financial market value of the squad ($w \approx 3.93$).
+  High Predictive Reliability: With a Mean Absolute Error of only 5.54 points, the model proves that basic underlying metrics can predict a full 38-game season outcome with remarkable accuracy.
+  The "Outlier" Effect: While the model is highly accurate for most teams, the residuals (like Nottingham Forest's +15 point overperformance) highlight the beautiful unpredictability of football—where luck, coaching, and momentum still play a role that pure data cannot fully capture.
 
 ---
 *Created as part of the Machine Learning Specialization (DeepLearning.AI) journey.*
